@@ -63,11 +63,13 @@ lockvar s:gmarks_nlist
 
 " Highlighting {{{1
 " Highlighting: Setup some nice colours to show the mark positions.
-hi default MarkologyHLl ctermfg=green ctermbg=black cterm=bold guifg=green guibg=black
-hi default MarkologyHLLine cterm=underline gui=undercurl guisp=#007777
-hi default MarkologyHLu ctermfg=green ctermbg=black cterm=bold guifg=green guibg=black
-hi default MarkologyHLo ctermfg=green ctermbg=black cterm=bold guifg=green guibg=black
-hi default MarkologyHLm ctermfg=green ctermbg=black cterm=bold guifg=green guibg=black
+if g:markology_set_highlights == 1
+    hi default MarkologyHLl ctermfg=green ctermbg=black cterm=bold guifg=green guibg=black
+    hi default MarkologyHLLine cterm=underline gui=undercurl guisp=#007777
+    hi default MarkologyHLu ctermfg=green ctermbg=black cterm=bold guifg=green guibg=black
+    hi default MarkologyHLo ctermfg=green ctermbg=black cterm=bold guifg=green guibg=black
+    hi default MarkologyHLm ctermfg=green ctermbg=black cterm=bold guifg=green guibg=black
+endif
 " }}}1
 
 " Private Functions {{{1
